@@ -1,0 +1,275 @@
+/*Init*/
+
+@font-face {
+    font-family: NunitoSans-Regular;
+    src: url(../fonts/NunitoSans-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1000px) {
+    #content,
+    .content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.content {
+    float: left;
+    width: 70%;
+}
+
+#content {
+    width: 100%;
+}
+
+header {
+    display: inline;
+}
+
+body {
+    font-family: "Nunito-Regular", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+aside {
+    float: right;
+    width: 30%;
+    padding-left: 10px;
+}
+
+h1 {
+    color: white;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: normal;
+    color: #F6AD06;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+p {
+    line-height: 24px;
+    font-size: 16px;
+}
+
+button {
+    width: 156px;
+    height: 48px;
+    border: 0.5;
+    background-color: transparent;
+    border-color: white;
+    border-radius: 32px;
+    color: white;
+}
+
+.btn-default {
+    width: 280px;
+    height: 45px;
+    background-color: #FFCD40;
+    border: 0 solid transparent;
+    border-radius: 3px;
+}
+
+
+/* 
+button a {
+    text-decoration: none;
+    color: white;
+} */
+
+button:hover {
+    border: 0;
+    background-color: white;
+    /* border-radius: 32px; */
+    color: #F6AD06;
+}
+
+
+/* button a:hover {
+    color: #F6AD06;
+} */
+
+nav {
+    background-color: #F6AD06;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 64px;
+    /* float: right; */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav li a:hover {
+    color: #0e3033;
+}
+
+nav ul li.active a {
+    color: #0e3033;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.jumbotron {
+    background-image: url("../img/jumbotron.png");
+    font-size: 20px;
+    padding-left: 80px;
+    padding-top: 200px;
+    text-align: left;
+    height: 480px;
+    color: white;
+}
+
+.keunggulan {
+    padding: 16px 16px 16px 16px;
+}
+
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.flex-container-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1000px) {
+    .flex-container-column,
+    .flex-container-row {
+        display: block;
+    }
+}
+
+.box {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    min-width: 300px;
+    /* properti pendukung */
+    font-size: 1.5em;
+    text-align: center;
+    padding: 40px;
+    border: 0;
+    background: white;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+.box:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: all 200ms ease-in-out;
+}
+
+.img-keunggulan {
+    max-width: 88px;
+    max-height: 88px;
+    object-position: center;
+    object-fit: fill;
+}
+
+.kata-mereka {
+    padding: 40px;
+    background-color: #F6AD06;
+    color: white;
+}
+
+.about {
+    padding: 60px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: white;
+    color: #0e3033;
+}
+
+.profile {
+    padding: 60px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: #F5F5F5;
+    color: #0e3033;
+    text-align: center;
+}
+
+hr {
+    border: 0.2px solid #FFFFFF;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 20px 20px 20px;
+    text-align: center;
+}
+
+.featured-image {
+    width: 100%;
+    min-height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile img {
+    width: 200px;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #F6AD06;
+    text-align: center;
+    font-weight: bold;
+}
